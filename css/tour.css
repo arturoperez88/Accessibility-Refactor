@@ -14,3 +14,20 @@ pre {
   height: 0%;
   padding: 10px;
 }
+
+table {
+	text-align: center;
+	margin: 0 auto;
+}
+
+table,th, td {
+	border-spacing: 10px;
+	border:4px solid #093145;
+	border-collapse: collapse;
+	color: #efd469 ; 
+	background:#9a2617;
+}
+
+td {	
+ color: white;
+}
