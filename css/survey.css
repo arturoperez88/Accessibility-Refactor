@@ -1,7 +1,13 @@
 /* Survey page styles */
-p {
+p{
+  margin: 10px 0px;
+  color: #efd469;
+}
+label {
+  display: inline-block;
   font-size: 20px;
   color: #efd469;
+  margin: 10px;
 }
 
 .photo{

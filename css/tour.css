@@ -4,6 +4,10 @@ pre {
   font-family: 'Open Sans', sans-serif;
 }
 
+.card{
+	text-align: center;
+}
+
 .heading{
   display: inline-block;
   margin: 0;
@@ -17,7 +21,6 @@ pre {
 
 table {
 	width:100%;
-	text-align: center;
 	margin: 0 auto;
 }
 

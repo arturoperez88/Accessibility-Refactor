@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <div class="main-nav"  role="Main navigation area">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -18,68 +18,75 @@
       </ul>
     </div>
 
-    <header>
-    </header>
-
-    <main>
-      <p class= "heading">Survey</p>
+    <main role= " Band survay">
+      <h1 class= "heading">Survey</h1>
       <div class="card">
         <div class="flex">
           <img class="photo" src= "img/concert01.jpg" alt="concert photo">
           <div class="container">
             <form class = "survey">
+
               <p>Who is your favorite band member:</p>
+
               <input id="john" type="radio" name="res" value="John"> 
-              <lable for="john">John</lable>
+              <label for="john">John</label>
+
               <input id="hazzard" type="radio" name="res" value="Hazzard"> 
-              <lable for="hazzard">Hazzard</lable>
+              <label> for="hazzard">Hazzard</label>
+
               <input id="bob" type="radio" name="res" value="Bob">
-              <lable for="bob">Bob</lable>
+              <label for="bob">Bob</label>
+
               <input id="sally" type="radio" name="res" value="Sally">
-              <lable for="sally">Sally</lable>
+              <label for="sally">Sally</label>
 
               <p>What is your favorite album:</p>
+
               <select id="albums" name="select">
-                <option value="1">Party For An Angel</option>
-                <option value="2">A Day Of Old</option>
-                <option value="3">Finding My Shadow</option>
-                <option value="4">Diamond Fireworks</option>
-                <option value="5">Enjoy Your Desire</option>
-                <option value="6">This Is For You</option>
-                <option value="7">Music Of My Life</option>
-                <option value="8">Song For Yesterday</option>
-                <option value="9">Heroic Forever</option>
-                <option value="10">Midnight Fires</option>
-                <option value="11">Street Of The Rider</option>
+               <option value="1">A Day Of Old</option>
+               <option value="2">Diamond Fireworks</option>
+               <option value="3">Enjoy Your Desire</option>
+               <option value="4">Finding My Shadow</option>
+               <option value="5">Heroic Forever</option>
+               <option value="6">Midnight Fires</option>
+               <option value="7">Music Of My Life</option>
+               <option value="8">Party For An Angel</option>
+               <option value="9">Song For Yesterday</option>
+               <option value="10">Street Of The Rider</option> 
+               <option value="11">This Is For You</option>               
               </select><br>
 
               <p>What is your favorite song:</p>
+
               <textarea id="fs"></textarea>
+
             </form>
           </div>
         </div>
       </div>
-      <p class= "heading">Newsletter</p>
+
+      <h1 class= "heading">Newsletter</h1>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/the_band.jpg" alt="">
+          <img class="photo" src= "img/the_band.jpg" alt=" Band palying the guitar and drums">
             <div class="container">
               <form class="newsletter">
-                  <p>Name:<input type ="text" name="textfield"></p>
-                  <p>Email: <input type ="email" name="textfield"></p>
-                  <p>Retype Email: <input type ="email" name="textfield"></p>
-                  <button><a href="#" class="submmit">Sign Up</a></button>
+                  <label>Name:<input type ="text" name="textfield"></label>
+                  <label>Email: <input type ="email" name="textfield"></label>
+                  <label>Retype Email: <input type ="email" name="textfield"></label>
+                  <button class="submmit">Sign Up</button>
               </form>
             </div>
         </div>
       </div>
+
     </main>
 
-    <footer>
+    <footer role="Social media icons">
       <ul>
-        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png"></a></li>
-        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png"></a></li>
-        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png"></a></li>
+        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter icon"></a></li>
+        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="Youtube icon"></a></li>
+        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="Spotify icon"></a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>
