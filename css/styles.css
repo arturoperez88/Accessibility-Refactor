@@ -28,13 +28,13 @@ a:hover {
 
 /* Section Styles */
 
-input,label,select {
+label,select {
   cursor: pointer;
 }
 
 .main-nav {
   width: 100%;
-  background: rgba(45, 43, 48, 0.8);
+  background: #093145;
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -71,11 +71,25 @@ input,label,select {
 
 header {
   text-align: center;
-  background: url('../img/concert02_with_text.jpg') no-repeat top center ;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
   height: 350px;
+}
+
+#banner-h1{
+  font-size: 36px;
+  color: black;
+  opacity: 0.7;
+  margin-top: 75px
+}
+
+#banner-p{
+  font-size: 24px;
+  font-weight: bold;
+  color:darkred; 
+  margin-top: 20px;
 }
 
 .tag {
@@ -109,7 +123,6 @@ header .name{
   border-color: white;
 }
 
-
 .photo{
   display: block;
   width: 250px;
@@ -125,11 +138,17 @@ header .name{
 }
 
 .heading{
-  font-size: 2em;
+  font-size: 20px;
   text-transform: uppercase;
-  font-weight: bold;
   color: #efd469;
   margin-top: 10px;
+  font-weight: 300;
+
+}
+
+p{
+  font-size: 16px;
+   font-weight: 300;
 }
 
 .buy, .submmit {
@@ -188,7 +207,7 @@ opacity:0.5 ;
 }
 
 /* Styles for larger screens */
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 760px) {
 
   .flex {
     display: -ms-flexbox;      /* TWEENER - IE 10 */
@@ -196,6 +215,18 @@ opacity:0.5 ;
     max-width: 1200px;
     -ms-flex-pack: distribute;
   }
+
+  .heading{
+    font-size: 24px;
+  }
+
+  #banner-h1{
+  font-size: 64px;
+}
+
+#banner-p{
+  font-size: 34px;
+}
 
   header {
     min-height: 470px;
@@ -223,7 +254,7 @@ opacity:0.5 ;
   }
 
   .photo{
-    width: 30%;
+    width: 40%;
     margin: 20px 30px;
   }
 

@@ -6,6 +6,10 @@ pre {
 
 .card{
 	text-align: center;
+	padding-left: 0px;
+	padding-right:0px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .heading{
@@ -21,18 +25,42 @@ pre {
 
 table {
 	width:100%;
+	height: 150px;
 	margin: 0 auto;
 }
 
 table,th, td {
-	border-spacing: 10px;
 	border:4px solid #093145;
 	border-collapse: collapse;
 	color: #efd469 ; 
 	background: black;
 }
+th{
+	background:#efd469;
+	color: black;
+}
 
 td {	
  color: white;
+ font-size: 12px;
 }
 
+/* Styles for larger screens */
+@media screen and (min-width: 760px) {
+.card{
+		margin: 30px auto;
+	}
+
+table {
+	height: 200px;
+}
+th{
+	font-size: 20px;
+}
+
+td{
+	font-size: 16px;
+}
+
+
+}

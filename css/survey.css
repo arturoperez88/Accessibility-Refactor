@@ -1,24 +1,87 @@
 /* Survey page styles */
-p{
-  margin: 10px 0px;
-  color: #efd469;
-}
-label {
-  display: inline-block;
-  font-size: 20px;
-  color: #efd469;
-  margin: 10px;
-}
-
-.photo{
-  width: 60%;
-  padding: 10px;
+.card{
+  padding-right: 5px; 
+  padding-left: 5px;
 }
 
 form {
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 5px;
   text-align: left;
   display: inline-block;
+}
+
+fieldset{
+  border:none;
+}
+.newsletter fieldset {
+  text-align: left;
+}
+
+legend {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: #efd469;
+  font-size: 20px;
+  
+}
+
+p{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 0px;
+  color: #efd469;
+  font-size: 16px;
+}
+
+input{
+  outline: none;
+}
+
+.newsletter input{
+  height: 20px;
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+  font-size: 14px;
+  color: white;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.survey label{
+  margin: 0px;
+}
+.newsletter label{
+  color: #efd469;
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+}
+select {
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+textarea {
+  outline: none;
+  height: 75px;
+  width: 100%;
+}
+
+input[type=radio]:checked + label{
+  color: #efd469;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.photo{
+  width: 85%;
+  padding: 10px;
 }
 
 .container{
@@ -28,21 +91,46 @@ form {
   text-align: right;
 
 }
-select {
-  outline: none;
-  font-size: 32px;
-  font-weight: bold;
-}
 
-select, textarea {
-  width: 100%;
-  height: 75px;
+.submmit{
+  margin-top: 30px;
 }
 
 
 /* Styles for larger screens */
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 760px) {
+    
+    .flex {
+    display: none;      /* TWEENER - IE 10 */
+    display: initial;
+    max-width: 1200px;
+    -ms-flex-pack: initial;
+  }
+
   .photo{
-    width: 40%;
+  width: 75%;
+    margin: auto;
+  }
+
+  fieldset {
+    width: 315px;
+  }
+  #name, #email, #re-email {
+    height: 30px;
+    font-size: 15px;
   }
 }
+
+@media screen and (min-width: 1024px){
+   .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    -ms-flex-pack: distribute;
+  }
+
+.photo{
+  width: 50%;
+}
+
+}
+

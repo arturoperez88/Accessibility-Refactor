@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div class="main-nav"  role="Main navigation area">
+    <div class="main-nav"  role="navigation">
       <ul class="nav">
         <li class="name"><a href="index.html">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -18,63 +18,81 @@
       </ul>
     </div>
 
-    <main role= " Band survay">
-      <h1 class= "heading">Survey</h1>
+    <header role="banner">
+      <h1 id="banner-h1">ACCESSIBLE FROG</h1>
+      <p id="banner-p">we make awsome music</p>
+    </header>
+
+    <main role= "main">
+      <h2 class= "heading">Survey</h2>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/concert01.jpg" alt="concert photo">
+          <img class="photo" src="img/concert01.jpg" alt="Concert photo">
           <div class="container">
             <form class = "survey">
+              <fieldset>
+                 <legend>Survay</legend><br> 
+                <p>Who is your favorite band member:</p>
 
-              <p>Who is your favorite band member:</p>
+                <input id="john" type="radio" name="res" value="John"> 
+                <label for="john">John</label>
 
-              <input id="john" type="radio" name="res" value="John"> 
-              <label for="john">John</label>
+                <input id="hazzard" type="radio" name="res" value="Hazzard"> 
+                <label for="hazzard">Hazzard</label>
 
-              <input id="hazzard" type="radio" name="res" value="Hazzard"> 
-              <label> for="hazzard">Hazzard</label>
+                <input id="bob" type="radio" name="res" value="Bob">
+                <label for="bob">Bob</label>
 
-              <input id="bob" type="radio" name="res" value="Bob">
-              <label for="bob">Bob</label>
+                <input id="sally" type="radio" name="res" value="Sally">
+                <label for="sally">Sally</label>
 
-              <input id="sally" type="radio" name="res" value="Sally">
-              <label for="sally">Sally</label>
 
-              <p>What is your favorite album:</p>
+                <p> What is your favorite album:</p>
 
-              <select id="albums" name="select">
-               <option value="1">A Day Of Old</option>
-               <option value="2">Diamond Fireworks</option>
-               <option value="3">Enjoy Your Desire</option>
-               <option value="4">Finding My Shadow</option>
-               <option value="5">Heroic Forever</option>
-               <option value="6">Midnight Fires</option>
-               <option value="7">Music Of My Life</option>
-               <option value="8">Party For An Angel</option>
-               <option value="9">Song For Yesterday</option>
-               <option value="10">Street Of The Rider</option> 
-               <option value="11">This Is For You</option>               
-              </select><br>
+                <select id="albums" name="select">
+                 <option value="1">A Day Of Old</option>
+                 <option value="2">Diamond Fireworks</option>
+                 <option value="3">Enjoy Your Desire</option>
+                 <option value="4">Finding My Shadow</option>
+                 <option value="5">Heroic Forever</option>
+                 <option value="6">Midnight Fires</option>
+                 <option value="7">Music Of My Life</option>
+                 <option value="8">Party For An Angel</option>
+                 <option value="9">Song For Yesterday</option>
+                 <option value="10">Street Of The Rider</option> 
+                 <option value="11">This Is For You</option>               
+                </select><br>
 
-              <p>What is your favorite song:</p>
+                <p> What is your favorite song:</p>
+                <textarea id="fs"></textarea>
 
-              <textarea id="fs"></textarea>
-
+              </fieldset>
             </form>
+
           </div>
         </div>
       </div>
 
-      <h1 class= "heading">Newsletter</h1>
+      <h2 class= "heading">Newsletter</h2>
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/the_band.jpg" alt=" Band palying the guitar and drums">
+          <img class="photo" src="img/the_band.jpg" alt="Band playing the guitar and drums">
             <div class="container">
               <form class="newsletter">
-                  <label>Name:<input type ="text" name="textfield"></label>
-                  <label>Email: <input type ="email" name="textfield"></label>
-                  <label>Retype Email: <input type ="email" name="textfield"></label>
+                <fieldset>
+                  <legend> Newsletter</legend><br>     
+                  <label for="name">Name:</label><br>
+                  <input id="name" type ="text" name="textfield"><br>
+
+                  <label for="email">Email:</label><br>
+                   <input id="email" type ="email" name="textfield"><br>
+
+                  <label for="re-email" >Retype Email:</label><br>
+                   <input id="re-email" type ="email" name="textfield"><br>
+
                   <button class="submmit">Sign Up</button>
+
+                </fieldset>
               </form>
             </div>
         </div>
@@ -82,7 +100,7 @@
 
     </main>
 
-    <footer role="Social media icons">
+    <footer role="contentinfo">
       <ul>
         <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="Twitter icon"></a></li>
         <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="Youtube icon"></a></li>
