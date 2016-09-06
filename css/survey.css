@@ -14,20 +14,16 @@ form {
 fieldset{
   border:none;
 }
-.newsletter fieldset {
-  text-align: left;
-}
 
 legend {
   display: inline-block;
   width: 100%;
   text-align: center;
   color: #efd469;
-  font-size: 20px;
-  
+  font-size: 20px; 
 }
 
-p{
+ .p{
   margin-top: 20px;
   margin-bottom: 5px;
   padding: 0px;
@@ -38,10 +34,15 @@ p{
 input{
   outline: none;
 }
+textarea:focus,
+input:focus {
+  background: lightgray;
+  transition: 1s;
+}
 
 .newsletter input{
-  height: 20px;
-  width: 100%;
+  height: 22px;
+  width: 300px;
 }
 
 label {
@@ -59,18 +60,21 @@ label {
   color: #efd469;
   margin: 10px 0px 0px 0px;
   padding: 0px;
+  text-align: left;
 }
 select {
   width: 100%;
   outline: none;
   font-size: 16px;
   font-weight: bold;
+  margin:10px 0px;
 }
 
 textarea {
   outline: none;
   height: 75px;
   width: 100%;
+  margin: 10px 0px; 
 }
 
 input[type=radio]:checked + label{
@@ -86,10 +90,6 @@ input[type=radio]:checked + label{
 
 .container{
   text-align: center;
-}
-.newsletter{
-  text-align: right;
-
 }
 
 .submmit{
@@ -111,13 +111,20 @@ input[type=radio]:checked + label{
   width: 75%;
     margin: auto;
   }
+  textarea{
+    font-size: 14px;
+  }
 
   fieldset {
     width: 315px;
   }
+
+  .newsletter{
+    margin: 0pc auto;
+  }
   #name, #email, #re-email {
     height: 30px;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 

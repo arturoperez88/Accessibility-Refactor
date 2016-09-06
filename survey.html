@@ -29,10 +29,10 @@
         <div class="flex">
           <img class="photo" src="img/concert01.jpg" alt="Concert photo">
           <div class="container">
-            <form class = "survey">
-              <fieldset>
+            <form>
+              <fieldset class = "survey">
                  <legend>Survay</legend><br> 
-                <p>Who is your favorite band member:</p>
+                <p class="p">Who is your favorite band member:</p>
 
                 <input id="john" type="radio" name="res" value="John"> 
                 <label for="john">John</label>
@@ -47,7 +47,7 @@
                 <label for="sally">Sally</label>
 
 
-                <p> What is your favorite album:</p>
+                <label class="p" for="albums"> What is your favorite album:</label>
 
                 <select id="albums" name="select">
                  <option value="1">A Day Of Old</option>
@@ -63,11 +63,12 @@
                  <option value="11">This Is For You</option>               
                 </select><br>
 
-                <p> What is your favorite song:</p>
+               <label class="p" for="fs">What is your favorite song:</label>
+
                 <textarea id="fs"></textarea>
 
               </fieldset>
-            </form>
+            
 
           </div>
         </div>
@@ -78,8 +79,8 @@
         <div class="flex">
           <img class="photo" src="img/the_band.jpg" alt="Band playing the guitar and drums">
             <div class="container">
-              <form class="newsletter">
-                <fieldset>
+             
+                <fieldset class = "newsletter">
                   <legend> Newsletter</legend><br>     
                   <label for="name">Name:</label><br>
                   <input id="name" type ="text" name="textfield"><br>
